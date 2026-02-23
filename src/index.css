@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@layer base {
+    body {
+        font-family: 'Manrope', sans-serif;
+        color: #1D110D;
+        background-color: #ffffff;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+@layer components {
+
+    /* Helper components for legacy pages to still function before we overhaul them */
+    .container {
+        max-width: 80rem;
+        /* max-w-7xl */
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid transparent;
+        border-radius: 9999px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #f15b29;
+        /* brand-orange */
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-primary:hover {
+        background-color: #ea580c;
+        /* orange-600 */
+    }
+
+    .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 1.5rem;
+        border: 1px solid #d1d5db;
+        border-radius: 9999px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1a1a1a;
+        /* brand-dark */
+        background-color: #ffffff;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-secondary:hover {
+        background-color: #f9fafb;
+        /* gray-50 */
+    }
+}
