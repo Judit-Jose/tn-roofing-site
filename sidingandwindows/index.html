@@ -935,10 +935,23 @@ setTimeout(function(){var l=document.getElementById('tn-page-loader');if(l){l.cl
 
     <div style="margin-bottom:26px;">
       <label style="display:block;color:#111;font-weight:700;font-size:14px;margin-bottom:7px;">Phone *</label>
-      <div id="cwf-phone-wrap" style="background:#eef0f2;border-radius:8px;border:2px solid transparent;">
+<div id="cwf-phone-wrap" style="background:#eef0f2;border-radius:8px;border:2px solid transparent;">
         <input id="cwf-phone" type="tel" placeholder="Phone" style="width:100%;box-sizing:border-box;padding:13px 16px 13px 88px;background:transparent;border:none;border-radius:8px;font-size:14px;font-family:inherit;outline:none;">
       </div>
-      <div id="cwf-err-phone" style="color:#d32f2f;font-size:13px;margin-top:5px;display:none;font-weight:500;"></div>
+      
+      <div style="margin-bottom:14px;">
+        <label style="display:block;font-weight:600;margin-bottom:6px;font-size:14px;color:#333;">Property Address *</label>
+        <input type="text" name="property_address" placeholder="123 Main St, Nashville, TN 37211" required
+          style="width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit;font-size:14px;box-sizing:border-box;outline:none;transition:border-color 0.2s;background:#fff"
+          onfocus="this.style.borderColor='#188bf6'" onblur="this.style.borderColor='#e2e8f0'">
+      </div>
+      <div style="margin-bottom:14px;">
+        <label style="display:block;font-weight:600;margin-bottom:6px;font-size:14px;color:#333;">Year Property Was Purchased *</label>
+        <input type="text" name="year_purchased" placeholder="e.g. 2015" required
+          style="width:100%;padding:12px 14px;border:1px solid #e2e8f0;border-radius:6px;font-family:inherit;font-size:14px;box-sizing:border-box;outline:none;transition:border-color 0.2s;background:#fff"
+          onfocus="this.style.borderColor='#188bf6'" onblur="this.style.borderColor='#e2e8f0'">
+      </div>
+<div id="cwf-err-phone" style="color:#d32f2f;font-size:13px;margin-top:5px;display:none;font-weight:500;"></div>
     </div>
 
     <button type="submit" id="cwf-btn" style="width:100%;padding:15px;background:#1e2a35;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;">Submit</button>
